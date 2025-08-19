@@ -149,7 +149,16 @@ export default function Work() {
       >
         Projects
       </motion.h2>
-<p className="font-bold text-center mb-12 relative z-10 bg-gradient-to-r from-indigo-600 to-purple-500 bg-clip-text text-transparent">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 relative z-10">
+        {projects.map((proj, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+            viewport={{ once: true }}
+          >
+            <p className="font-bold text-center mb-12 relative z-10 bg-gradient-to-r from-indigo-600 to-purple-500 bg-clip-text text-transparent">
     Explore the rest of my projects on{' '}
     <a 
       href="https://github.com/Alfiya-Simran" 
@@ -161,16 +170,6 @@ export default function Work() {
     </a>
     .
   </p>
-  
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 relative z-10">
-        {projects.map((proj, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            viewport={{ once: true }}
-          >
             <ProjectCard {...proj} />
           </motion.div>
         ))}
@@ -178,6 +177,7 @@ export default function Work() {
     </section>
   );
 }
+
 
 
 
