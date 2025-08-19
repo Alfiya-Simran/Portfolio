@@ -158,7 +158,11 @@ export default function Work() {
             transition={{ delay: index * 0.1 }}
             viewport={{ once: true }}
           >
-            <p className="font-bold text-center mb-12 relative z-10 bg-gradient-to-r from-indigo-600 to-purple-500 bg-clip-text text-transparent">
+            <ProjectCard {...proj} />
+          </motion.div>
+        ))}
+      </div>
+       <p className="font-bold text-center mb-12 relative z-10 bg-gradient-to-r from-indigo-600 to-purple-500 bg-clip-text text-transparent">
     Explore the rest of my projects on{' '}
     <a 
       href="https://github.com/Alfiya-Simran" 
@@ -170,13 +174,10 @@ export default function Work() {
     </a>
     .
   </p>
-            <ProjectCard {...proj} />
-          </motion.div>
-        ))}
-      </div>
     </section>
   );
 }
+
 
 
 
