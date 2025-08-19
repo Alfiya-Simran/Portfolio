@@ -7,34 +7,35 @@ import { useTheme } from "../context/ThemeContext";
 
 const projects = [
   {
-  title: "Credit Card Fraud Detection",
-  desc: "Streamlit-based ML app that detects fraudulent credit card transactions using Random Forest and Scikit-learn.",
-  techList: ["Python", "Streamlit", "Scikit-learn", "Pandas"],
-  repo: "https://github.com/Alfiya-Simran/Credit-card-fraud-detection-model",
-  image: "public/images/fraud.png"
-},
+    title: "Credit Card Fraud Detection",
+    desc: "Streamlit-based ML app that detects fraudulent credit card transactions using Random Forest and Scikit-learn.",
+    techList: ["Python", "Streamlit", "Scikit-learn", "Pandas"],
+    repo: "https://github.com/Alfiya-Simran/Credit-card-fraud-detection-model",
+    image: "/images/fraud.png"
+  },
   {
     title: "InvestNest",
     desc: "Startup funding platform with investor/startup roles.",
     techList: ["React", "Firebase", "Tailwind CSS"],
     repo: "https://github.com/Alfiya-Simran/Mini-PC-voice-assistant",
-    image: "public/images/invest.png"
+    image: "/images/invest.png"
   },
   {
     title: "Mini voice assisstant for PC",
     desc: "A smart desktop voice assistant built using Python.",
     techList: ["Python", "PyAutoGUI", "SpeechRecognition","Tkinter"],
     repo: "https://github.com/Alfiya-Simran/InvestNest",
-    image: "public/images/ana.png"
+    image: "/images/ana.png"
   },
   {
     title: "Brain Tumor detection & classification model",
     desc: "A deep learning-based Brain Tumor Classification system with a Streamlit interface for real-time MRI image analysis",
     techList: ["Python", "TensorFlow/Keras", "OpenCV", "Streamlit", "NumPy", "Matplotlib"],
     repo: "https://github.com/Alfiya-Simran/Brain-Tumor",
-    video: "public/videos/braintumor.mp4"
+    video: "/videos/braintumor.mp4"
   },
 ];
+
 
 export default function Projects() {
   const vantaRef = useRef(null);
