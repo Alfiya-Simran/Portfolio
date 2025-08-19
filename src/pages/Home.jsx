@@ -80,7 +80,7 @@ export default function Home() {
 
         <p className="mt-4 text-lg text-indigo-600 dark:text-indigo-400 font-medium">
           <Typewriter
-            words={['AI/ML Enthusiast', 'Full Stack Developer', 'Data Analyst']}
+            words={['Data Science Enthusiast', 'AI/ML Enthusiast', 'Full Stack Developer']}
             loop={true}
             cursor
             cursorStyle="|"
