@@ -55,7 +55,7 @@ export default function Home() {
       >
         <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} scale={1.05}>
           <img
-            src={Photograph}
+            src={profilePic}
             alt="Alfiya Simran"
             className="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-lg mb-6 border-4 border-indigo-500 object-cover"
           />
