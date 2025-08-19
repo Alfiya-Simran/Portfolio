@@ -65,7 +65,7 @@ export default function Contact() {
           <button
             onClick={() =>
               window.open(
-                "https://mail.google.com/mail/?view=cm&fs=1&to=yourmail@example.com",
+                "https://mail.google.com/mail/?view=cm&fs=1&to=alfiyasimran05@gmail.com",
                 "_blank"
               )
             }
