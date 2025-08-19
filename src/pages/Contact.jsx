@@ -70,7 +70,7 @@ export default function Contact() {
 
           {/* Email */}
           <a
-            href="mailto:alfiyasimran05@gmail.com"
+            href="alfiyasimran05@gmail.com"
             className="hover:text-red-500 transition"
           >
             <FaEnvelope />
@@ -78,7 +78,7 @@ export default function Contact() {
 
           {/* Phone */}
           <a
-            href="tel:+917204340316"
+            href="+917204340316"
             className="hover:text-green-500 transition"
           >
             <FaPhone />
