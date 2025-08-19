@@ -62,8 +62,12 @@ export default function Contact() {
             <FaGithub />
           </a>
           {/* Email */}
-          <button onClick={() => window.open("mailto:alfiyasimran05@gmail.com")} 
-            className="hover:text-red-500 transition transform hover:scale-125">
+          <button
+            onClick={() =>
+              window.open("mailto:alfiyasimran05@gmail.com?subject=Hello&body=Hi, I wanted to connect with you.")
+            }
+            className="hover:text-red-500 transition"
+            >
             <FaEnvelope />
           </button>
           {/* Phone */}
