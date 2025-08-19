@@ -53,46 +53,64 @@ export default function About() {
 
       {/* 🆕 Skills Subsection */}
       {/* 🆕 Enhanced Tech Stack */}
-<div className="pt-8">
-  <h3 className="text-2xl font-semibold text-purple-600 mb-6 text-center">
-    Tech Stack
-  </h3>
-
-  <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-sm md:text-base text-gray-800 dark:text-gray-200">
-    <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
-      <h4 className="font-semibold text-purple-500 mb-1">Languages</h4>
-      <p>Python, JavaScript, SQL</p>
-    </div>
-
-    <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
-      <h4 className="font-semibold text-purple-500 mb-1">Frameworks</h4>
-      <p>React, Flask, Streamlit</p>
-    </div>
-
-    <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
-      <h4 className="font-semibold text-purple-500 mb-1">Libraries</h4>
-      <p>Pandas, NumPy, Scikit-learn, Matplotlib</p>
-    </div>
-
-    <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
-      <h4 className="font-semibold text-purple-500 mb-1">Styling</h4>
-      <p>Tailwind CSS, Bootstrap</p>
-    </div>
-
-    <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
-      <h4 className="font-semibold text-purple-500 mb-1">Tools</h4>
-      <p>Git, GitHub, Firebase, VS Code</p>
-    </div>
-
-    <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
-      <h4 className="font-semibold text-purple-500 mb-1">Concepts</h4>
-      <p>Machine Learning, REST APIs, Deployment</p>
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-);
-
-}
+      <div className="pt-8">
+        <h3 className="text-2xl font-semibold text-purple-600 mb-6 text-center">
+          Skills
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm md:text-base text-gray-800 dark:text-gray-200">
+          {/* Technical Skills */}
+          <div>
+            <h4 className="font-semibold text-purple-500 mb-4 text-center md:text-left">Technical Skills</h4>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
+                <h5 className="font-semibold mb-1">Languages</h5>
+                <p>Python, JavaScript, SQL</p>
+              </div>
+              <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
+                <h5 className="font-semibold mb-1">Frameworks</h5>
+                <p>React, Flask, Streamlit</p>
+              </div>
+              <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
+                <h5 className="font-semibold mb-1">Libraries</h5>
+                <p>Pandas, NumPy, Scikit-learn, Matplotlib</p>
+              </div>
+              <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
+                <h5 className="font-semibold mb-1">Styling</h5>
+                <p>Tailwind CSS, Bootstrap</p>
+              </div>
+              <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
+                <h5 className="font-semibold mb-1">Tools</h5>
+                <p>Git, GitHub, Firebase, VS Code</p>
+              </div>
+              <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
+                <h5 className="font-semibold mb-1">Concepts</h5>
+                <p>Machine Learning, REST APIs, Deployment</p>
+              </div>
+            </div>
+          </div>
+          {/* Soft Skills */}
+          <div>
+            <h4 className="font-semibold text-purple-500 mb-4 text-center md:text-left">Soft Skills</h4>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
+                <p>Teamwork & Collaboration</p>
+              </div>
+              <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
+                <p>Problem Solving</p>
+              </div>
+              <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
+                <p>Communication</p>
+              </div>
+              <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
+                <p>Adaptability & Learning</p>
+              </div>
+              <div className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition">
+                <p>Time Management</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    );
+    }
