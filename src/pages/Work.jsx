@@ -8,23 +8,43 @@ import { useTheme } from "../context/ThemeContext";
 
 const internships = [
   {
-    title: "Machine Learning Intern",
-    org: "InternPe",
-    duration: "Jan 2025 – Feb 2025",
+    title: "Salesforce Intern",
+    org: "TCS Last Mile & SmartBridge",
+    duration: "June 2025 - Present",
     points: [
-      "Built ML models for diabetes, breast cancer, and IPL match prediction.",
-      "Developed a web UI using Streamlit and Flask for model interaction.",
-      "Published LinkedIn content to present results and demos.",
+      "Contributed to enterprise-level application development projects.",
+      "Gained hands-on experience in SDLC, coding standards, and documentation.",
+      "Worked with Java, SQL, and cloud-based tools in real-world scenarios."
+    ],
+  },
+  {
+    title: "Data Science with AI Intern",
+    org: "Labmentix",
+    duration: "June 2025 - Present",
+    points: [
+      "Assisting in developing AI/ML-driven healthcare solutions.",
+      "Implementing data preprocessing, model training, and evaluation.",
+      "Working with Python, Scikit-learn, TensorFlow, and data visualization tools."
     ],
   },
   {
     title: "Data Science Intern",
     org: "Tripple One Solutions",
-    duration: "Jun 2025 – Aug 2025",
+    duration: "June 2025 – July 2025",
     points: [
       "Worked on ML models for analyzing business performance data.",
       "Performed data cleaning, EDA, and feature engineering.",
       "Used Python, Pandas, Scikit-learn, Matplotlib for implementation.",
+    ],
+  },
+  {
+    title: "Machine Learning Intern",
+    org: "InternPe",
+    duration: "Nov 2024 – Dec 2024",
+    points: [
+      "Built ML models for diabetes, breast cancer, and IPL match prediction.",
+      "Developed a web UI using Streamlit and Flask for model interaction.",
+      "Published LinkedIn content to present results and demos.",
     ],
   },
 ];
@@ -50,6 +70,13 @@ const projects = [
     techList: ["Python", "PyAutoGUI", "SpeechRecognition", "Tkinter"],
     repo: "https://github.com/Alfiya-Simran/InvestNest",
     image: "/images/ana.png",
+  },
+  {
+    title: "Brain Tumor detection & classification model",
+    desc: "A deep learning-based Brain Tumor Classification system with a Streamlit interface for real-time MRI image analysis",
+    techList: ["Python", "TensorFlow/Keras", "OpenCV", "Streamlit", "NumPy", "Matplotlib"],
+    repo: "https://github.com/Alfiya-Simran/Brain-Tumor",
+    video: "public/videos/braintumor.mp4"
   },
 ];
 
@@ -139,3 +166,4 @@ export default function Work() {
     </section>
   );
 }
+
