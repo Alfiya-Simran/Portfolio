@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import * as THREE from "three";
 import NET from "vanta/dist/vanta.net.min";
 import { useTheme } from "../context/ThemeContext";
@@ -45,41 +45,43 @@ export default function Contact() {
       className="relative min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 py-16 flex items-center justify-center overflow-hidden text-gray-900 dark:text-white"
     >
       <div className="relative z-10 w-full max-w-xl text-center">
-        <h2 className="text-4xl font-semibold text-purple-600 mb-6">
-          Contact Me
-        </h2>
+        <h2 className="text-4xl font-semibold text-purple-600 mb-8">Contact Me</h2>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-lg">
+        <div className="flex justify-center gap-8 text-3xl">
+          {/* LinkedIn */}
           <a
-            href="http://www.linkedin.com/in/alfiyasimran"
+            href="https://www.linkedin.com/in/alfiyasimran"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-white/30 dark:bg-black/30 backdrop-blur-md px-4 py-2 rounded-lg shadow-lg hover:scale-105 transition"
+            className="hover:text-blue-500 transition"
           >
-            <FaLinkedin className="text-blue-600 text-2xl" /> LinkedIn
+            <FaLinkedin />
           </a>
 
+          {/* GitHub */}
           <a
             href="https://github.com/Alfiya-Simran"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-white/30 dark:bg-black/30 backdrop-blur-md px-4 py-2 rounded-lg shadow-lg hover:scale-105 transition"
+            className="hover:text-gray-800 dark:hover:text-gray-200 transition"
           >
-            <FaGithub className="text-gray-800 dark:text-white text-2xl" /> GitHub
+            <FaGithub />
           </a>
 
+          {/* Email */}
           <a
             href="mailto:alfiyasimran05@gmail.com"
-            className="flex items-center gap-2 bg-white/30 dark:bg-black/30 backdrop-blur-md px-4 py-2 rounded-lg shadow-lg hover:scale-105 transition"
+            className="hover:text-red-500 transition"
           >
-            <FaEnvelope className="text-red-500 text-2xl" /> Email
+            <FaEnvelope />
           </a>
 
+          {/* Phone */}
           <a
             href="tel:+917204340316"
-            className="flex items-center gap-2 bg-white/30 dark:bg-black/30 backdrop-blur-md px-4 py-2 rounded-lg shadow-lg hover:scale-105 transition"
+            className="hover:text-green-500 transition"
           >
-            <FaPhone className="text-green-500 text-2xl" /> Phone
+            <FaPhone />
           </a>
         </div>
       </div>
