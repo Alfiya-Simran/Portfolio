@@ -18,16 +18,7 @@ const projects = [
     desc: "Startup funding platform with investor/startup roles.",
     techList: ["React", "Firebase", "Tailwind CSS"],
     repo: "https://github.com/Alfiya-Simran/Mini-PC-voice-assistant",
-    images: [
-      "/images/Investnest/in1.png",
-      "/images/Investnest/in2.png",
-      "/images/Investnest/in3.png",
-      "/images/Investnest/in4.png",
-      "/images/Investnest/in5.png",
-      "/images/Investnest/in6.png",
-      "/images/Investnest/in7.png",
-      "/images/Investnest/in8.png",
-      ]
+    image: "/images/invest.png"
   },
   {
     title: "Mini voice assisstant for PC",
@@ -41,12 +32,7 @@ const projects = [
     desc: "A deep learning-based Brain Tumor Classification system with a Streamlit interface for real-time MRI image analysis",
     techList: ["Python", "TensorFlow/Keras", "OpenCV", "Streamlit", "NumPy", "Matplotlib"],
     repo: "https://github.com/Alfiya-Simran/Brain-Tumor",
-    images: [
-      "/images/bt1.png",
-      "/images/bt2.png",
-      "/images/bt3.png",
-      "/images/bt4.png"
-    ]
+    video: "/videos/braintumor.mp4"
   },
 ];
 
@@ -110,3 +96,6 @@ export default function Projects() {
     </section>
   );
 }
+
+
+
