@@ -11,21 +11,21 @@ const projects = [
   desc: "Streamlit-based ML app that detects fraudulent credit card transactions using Random Forest and Scikit-learn.",
   techList: ["Python", "Streamlit", "Scikit-learn", "Pandas"],
   repo: "https://github.com/Alfiya-Simran/Credit-card-fraud-detection-model",
-  image: "build/images/fraud.png"
+  image: "public/images/fraud.png"
 },
   {
     title: "InvestNest",
     desc: "Startup funding platform with investor/startup roles.",
     techList: ["React", "Firebase", "Tailwind CSS"],
     repo: "https://github.com/Alfiya-Simran/Mini-PC-voice-assistant",
-    image: "build/images/invest.png"
+    image: "public/images/invest.png"
   },
   {
     title: "Mini voice assisstant for PC",
     desc: "A smart desktop voice assistant built using Python.",
     techList: ["Python", "PyAutoGUI", "SpeechRecognition","Tkinter"],
     repo: "https://github.com/Alfiya-Simran/InvestNest",
-    image: "build/images/ana.png"
+    image: "public/images/ana.png"
   },
 ];
 
