@@ -52,27 +52,27 @@ export default function Contact() {
         </p>
         <div className="flex justify-center gap-6 text-3xl">
           {/* LinkedIn */}
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" 
+          <a href="https://linkedin.com/in/alfiyasimran" target="_blank" rel="noopener noreferrer" 
             className="hover:text-blue-600 transition transform hover:scale-125">
             <FaLinkedin />
           </a>
           {/* GitHub */}
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" 
+          <a href="https://github.com/Alfiya-Simran" target="_blank" rel="noopener noreferrer" 
             className="hover:text-gray-900 dark:hover:text-white transition transform hover:scale-125">
             <FaGithub />
           </a>
           {/* Email */}
-          <button onClick={() => window.open("mailto:yourmail@gmail.com")} 
+          <button onClick={() => window.open("mailto:alfiyasimran05@gmail.com")} 
             className="hover:text-red-500 transition transform hover:scale-125">
             <FaEnvelope />
           </button>
           {/* Phone */}
-          <button onClick={() => window.open("tel:+919876543210")} 
+          <button onClick={() => window.open("tel:+917204340316")} 
             className="hover:text-green-500 transition transform hover:scale-125">
             <FaPhone />
           </button>
           {/* WhatsApp */}
-          <button onClick={() => window.open("https://wa.me/919876543210", "_blank")} 
+          <button onClick={() => window.open("https://wa.me/917204340316", "_blank")} 
             className="hover:text-green-600 transition transform hover:scale-125">
             <FaWhatsapp />
           </button>
