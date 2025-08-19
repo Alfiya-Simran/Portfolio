@@ -44,56 +44,45 @@ export default function Contact() {
       ref={vantaRef}
       className="relative min-h-screen px-4 sm:px-8 md:px-16 lg:px-24 py-16 flex items-center justify-center overflow-hidden text-gray-900 dark:text-white"
     >
-      <div className="relative z-10 w-full max-w-xl text-center">
-        <h2 className="text-4xl font-semibold text-purple-600 mb-8">Contact Me</h2>
+      <div className="bg-white/20 dark:bg-black/30 backdrop-blur-lg border border-gray-300/20 dark:border-gray-700/50 
+p-6 rounded-2xl shadow-xl flex flex-col items-center gap-6 max-w-lg mx-auto">
+  <h2 className="text-3xl font-bold text-purple-600">Contact Me</h2>
+  <p className="text-center text-gray-700 dark:text-gray-300">
+    Feel free to reach out via any of the platforms below.
+  </p>
 
-        <div className="flex justify-center gap-8 text-3xl">
-          {/* LinkedIn */}
-          <a
-            href="https://www.linkedin.com/in/alfiyasimran"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-500 transition"
-          >
-            <FaLinkedin />
-          </a>
+  <div className="flex justify-center gap-6 text-3xl">
+    {/* LinkedIn */}
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" 
+       className="hover:text-blue-600 transition transform hover:scale-125">
+      <FaLinkedin />
+    </a>
 
-          {/* GitHub */}
-          <a
-            href="https://github.com/Alfiya-Simran"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-800 dark:hover:text-gray-200 transition"
-          >
-            <FaGithub />
-          </a>
+    {/* GitHub */}
+    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" 
+       className="hover:text-gray-900 dark:hover:text-white transition transform hover:scale-125">
+      <FaGithub />
+    </a>
 
-          {/* Email */}
-         <button
-           onClick={() =>
-             window.open(
-               "https://mail.google.com/mail/?view=cm&fs=1&to=alfiyasimran05@gmail.com",
-               "_blank"
-             )
-           }
-           className="hover:text-red-500 transition text-3xl"
-           >
-           <FaEnvelope />
-         </button>
-          {/* Phone */}
-          <button
-            onClick={() => window.open("tel:+917204340316")}
-            className="hover:text-green-500 transition text-3xl"
-            >
-            <FaPhone />
-          </button>
-          <button
-            onClick={() => window.open("https://wa.me/917204340316", "_blank")}
-            className="hover:text-green-600 transition text-3xl"
-            >
-            <FaWhatsapp />
-          </button>
-        </div>
+    {/* Email */}
+    <button onClick={() => window.open("mailto:yourmail@gmail.com")} 
+       className="hover:text-red-500 transition transform hover:scale-125">
+      <FaEnvelope />
+    </button>
+
+    {/* Phone */}
+    <button onClick={() => window.open("tel:+919876543210")} 
+       className="hover:text-green-500 transition transform hover:scale-125">
+      <FaPhone />
+    </button>
+
+    {/* WhatsApp */}
+    <button onClick={() => window.open("https://wa.me/919876543210", "_blank")} 
+       className="hover:text-green-600 transition transform hover:scale-125">
+      <FaWhatsapp />
+    </button>
+  </div>
+</div>
       </div>
     </section>
   );
