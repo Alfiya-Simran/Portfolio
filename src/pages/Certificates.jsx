@@ -5,23 +5,26 @@ import NET from "vanta/dist/vanta.net.min";
 import { useTheme } from "../context/ThemeContext";
 
 // CertificateCard component similar to ProjectCard style
-function CertificateCard({ title, issuer, date,certificateid, link }) {
+function CertificateCard({ title, issuer, date, certificateid, link }) {
   return (
     <a
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="block bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition border dark:border-gray-700 p-6 overflow-hidden"
+      className="block bg-white/30 dark:bg-black/30 backdrop-blur-md rounded-xl shadow-lg hover:shadow-xl transition p-6 overflow-hidden"
     >
       <h3 className="text-xl font-semibold text-indigo-700 dark:text-indigo-400 mb-2">
         {title}
       </h3>
       <p className="text-gray-700 dark:text-gray-300 mb-1">{issuer}</p>
       <p className="text-sm text-gray-600 dark:text-gray-400">{date}</p>
-      <p className="text-sm text-gray-600 dark:text-gray-400">{certificateid}</p>
+      {certificateid && (
+        <p className="text-sm text-gray-600 dark:text-gray-400">{certificateid}</p>
+      )}
     </a>
   );
 }
+
 
 // Sample certificates data - replace or extend as needed
 const certificates = [
@@ -123,3 +126,4 @@ export default function Certificates() {
     </section>
   );
 }
+
