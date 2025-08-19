@@ -69,7 +69,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row gap-6">
             {/* Technical Skills */}
             <div className="flex-1">
-              <h4 className="font-semibold text-purple-500 mb-4 text-center md:text-left">
+              <h4 className="font-semibold text-purple-500 mb-4 text-center">
                 Technical Skills
               </h4>
               <div className="grid grid-cols-2 gap-4">
@@ -100,7 +100,7 @@ export default function About() {
 
             {/* Soft Skills */}
             <div className="flex-1">
-              <h4 className="font-semibold text-purple-500 mb-4 text-center md:text-left">
+              <h4 className="font-semibold text-purple-500 mb-4 text-center">
                 Soft Skills
               </h4>
               <div className="grid grid-cols-1 gap-4">
