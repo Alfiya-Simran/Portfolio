@@ -13,16 +13,6 @@ export default function ProjectCard({ title, desc, techList, repo, link, image, 
         />
       )}
 
-      {video && (
-        <video
-          src={video}
-          controls
-          autoPlay
-          muted
-          loop
-          className="w-full h-55 object-cover rounded-lg"
-        />
-      )}
 
       <div className="p-6">
         <h3 className="text-xl font-semibold text-indigo-700 dark:text-indigo-400">
@@ -61,3 +51,4 @@ export default function ProjectCard({ title, desc, techList, repo, link, image, 
     </div>
   );
 }
+
