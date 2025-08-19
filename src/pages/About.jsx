@@ -65,57 +65,64 @@ export default function About() {
           <h3 className="text-2xl font-semibold text-purple-600 mb-6 text-center">
             Skills
           </h3>
+
           <div className="flex flex-col md:flex-row gap-6">
+            {/* Technical Skills */}
             <div className="flex-1">
               <h4 className="font-semibold text-purple-500 mb-4 text-center md:text-left">
                 Technical Skills
               </h4>
               <div className="grid grid-cols-2 gap-4">
                 {[
-      { title: "Languages", content: "Python, JavaScript, SQL" },
-      { title: "Frameworks", content: "React, Flask, Streamlit" },
-      { title: "Libraries", content: "Pandas, NumPy, Scikit-learn, Matplotlib" },
-      { title: "Styling", content: "Tailwind CSS, Bootstrap" },
-      { title: "Tools", content: "Git, GitHub, Firebase, VS Code" },
-      { title: "Concepts", content: "Machine Learning, REST APIs, Deployment" },
-                  ].map((skill) => (
-                    <div
-                      key={skill.title}
-                      className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition flex flex-col justify-center"
-                      >
-                      <h5 className="font-semibold mb-1">{skill.title}</h5>
-                      <p>{skill.content}</p>
-                    </div>
-                    )))}
+                  { title: "Languages", content: "Python, JavaScript, SQL" },
+                  { title: "Frameworks", content: "React, Flask, Streamlit" },
+                  {
+                    title: "Libraries",
+                    content: "Pandas, NumPy, Scikit-learn, Matplotlib",
+                  },
+                  { title: "Styling", content: "Tailwind CSS, Bootstrap" },
+                  { title: "Tools", content: "Git, GitHub, Firebase, VS Code" },
+                  {
+                    title: "Concepts",
+                    content: "Machine Learning, REST APIs, Deployment",
+                  },
+                ].map((skill) => (
+                  <div
+                    key={skill.title}
+                    className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition flex flex-col justify-center"
+                  >
+                    <h5 className="font-semibold mb-1">{skill.title}</h5>
+                    <p>{skill.content}</p>
+                  </div>
+                ))}
               </div>
             </div>
-          </div>
-          <div className="flex-1">
-            <h4 className="font-semibold text-purple-500 mb-4 text-center md:text-left">
-              Soft Skills
-            </h4>
-            <div className="grid grid-cols-1 gap-4">
-              {[
-      "Teamwork & Collaboration",
-      "Problem Solving",
-      "Communication",
-      "Adaptability & Learning",
-      "Time Management",
-    ].map((skill) => (
-      <div
-        key={skill}
-        className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition flex items-center justify-center"
-        >
-        <h5 className="font-semibold mb-1">{skill.title}</h5>
-        <p>{skill}</p>
-        </div>
-      ))}
+
+            {/* Soft Skills */}
+            <div className="flex-1">
+              <h4 className="font-semibold text-purple-500 mb-4 text-center md:text-left">
+                Soft Skills
+              </h4>
+              <div className="grid grid-cols-1 gap-4">
+                {[
+                  "Teamwork & Collaboration",
+                  "Problem Solving",
+                  "Communication",
+                  "Adaptability & Learning",
+                  "Time Management",
+                ].map((skill) => (
+                  <div
+                    key={skill}
+                    className="bg-white/20 dark:bg-black/20 p-4 rounded-lg shadow-sm hover:scale-[1.02] transition flex items-center justify-center"
+                  >
+                    <p>{skill}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
     </section>
-    );
+  );
 }
