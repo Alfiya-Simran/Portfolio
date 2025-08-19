@@ -15,7 +15,7 @@ export default function ProjectCard({ title, desc, techList, repo, link, image, 
 
       {/* Image Grid (2x2) */}
       {images && (
-        <div className="grid grid-cols-2 gap-2 w-full">
+        <div className="grid grid-cols-2 gap-2 w-50px">
           {images.map((img, idx) => (
             <img
               key={idx}
@@ -76,3 +76,4 @@ export default function ProjectCard({ title, desc, techList, repo, link, image, 
     </div>
   );
 }
+
