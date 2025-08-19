@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import * as THREE from "three";
 import NET from "vanta/dist/vanta.net.min";
 import { useTheme } from "../context/ThemeContext";
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Contact() {
   const vantaRef = useRef(null);
