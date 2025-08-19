@@ -34,7 +34,7 @@ const projects = [
     repo: "https://github.com/Alfiya-Simran/Brain-Tumor",
     images: [
       "/images/bt1.png",
-      "/images/btn2.png",
+      "/images/bt2.png",
       "/images/bt3.png",
       "/images/bt4.png"
     ]
