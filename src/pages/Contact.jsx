@@ -64,12 +64,16 @@ export default function Contact() {
           {/* Email */}
           <button
             onClick={() =>
-              window.open("mailto:alfiyasimran05@gmail.com?subject=Hello&body=Hi, I wanted to connect with you.")
+              window.open(
+                "https://mail.google.com/mail/?view=cm&fs=1&to=yourmail@example.com",
+                "_blank"
+              )
             }
-            className="hover:text-red-500 transition"
+            className="hover:text-red-500 transition text-3xl"
             >
             <FaEnvelope />
           </button>
+
           {/* Phone */}
           <button onClick={() => window.open("tel:+917204340316")} 
             className="hover:text-green-500 transition transform hover:scale-125">
