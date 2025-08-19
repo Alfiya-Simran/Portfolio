@@ -1,12 +1,26 @@
-import { FaArrowLeft, FaArrowRight, FaGithub } from "react-icons/fa"
-export default function ProjectCard({ title, desc, techList, repo, link, image }) {
+import { FaGithub } from "react-icons/fa";
+
+export default function ProjectCard({ title, desc, techList, repo, link, image, video }) {
   return (
     <div className="mx-auto max-w-3xl bg-white/30 dark:bg-black/30 backdrop-blur-md p-6 rounded-xl shadow-lg text-gray-800 dark:text-gray-100 space-y-6">
+      
+      {/* Image or Video */}
       {image && (
         <img
           src={image}
           alt={title}
-          className="w-full h-55 object-cover"
+          className="w-full h-55 object-cover rounded-lg"
+        />
+      )}
+
+      {video && (
+        <video
+          src={video}
+          controls
+          autoPlay
+          muted
+          loop
+          className="w-full h-55 object-cover rounded-lg"
         />
       )}
 
@@ -31,21 +45,17 @@ export default function ProjectCard({ title, desc, techList, repo, link, image }
         </div>
 
         <div className="mt-4 flex gap-4">
-            
           {repo && (
-           <a
-  href={repo}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center gap-2 px-4 py-1.5 text-sm font-medium text-white bg-gray-800 rounded-md hover:bg-black transition"
->
-  <span className="mr-1">View Repo</span>
-  <FaGithub className="w-6 h-6" />
-</a>
-
-
+            <a
+              href={repo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-1.5 text-sm font-medium text-white bg-gray-800 rounded-md hover:bg-black transition"
+            >
+              <span className="mr-1">View Repo</span>
+              <FaGithub className="w-6 h-6" />
+            </a>
           )}
-          
         </div>
       </div>
     </div>
