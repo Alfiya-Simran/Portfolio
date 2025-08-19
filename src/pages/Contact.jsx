@@ -69,12 +69,11 @@ export default function Contact() {
           </a>
 
           {/* Email */}
-          <a
-            href="alfiyasimran05@gmail.com"
-            className="hover:text-red-500 transition"
-          >
-            <FaEnvelope />
-          </a>
+         <FaEnvelope
+           onClick={() => window.location.href = "mailto:yourmail@example.com"}
+           className="cursor-pointer hover:text-red-500 transition"
+           />
+
 
           {/* Phone */}
           <a
