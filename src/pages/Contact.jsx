@@ -81,12 +81,18 @@ export default function Contact() {
            <FaEnvelope />
          </button>
           {/* Phone */}
-          <a
-            href="tel:+917204340316"
-            className="hover:text-green-500 transition"
-          >
+          <button
+            onClick={() => window.open("tel:+919876543210")}
+            className="hover:text-green-500 transition text-3xl"
+            >
             <FaPhone />
-          </a>
+          </button>
+          <button
+            onClick={() => window.open("https://wa.me/919876543210", "_blank")}
+            className="hover:text-green-600 transition text-3xl"
+            >
+            <FaWhatsapp />
+          </button>
         </div>
       </div>
     </section>
