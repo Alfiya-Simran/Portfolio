@@ -82,13 +82,13 @@ export default function Contact() {
          </button>
           {/* Phone */}
           <button
-            onClick={() => window.open("tel:+919876543210")}
+            onClick={() => window.open("tel:+917204340316")}
             className="hover:text-green-500 transition text-3xl"
             >
             <FaPhone />
           </button>
           <button
-            onClick={() => window.open("https://wa.me/919876543210", "_blank")}
+            onClick={() => window.open("https://wa.me/917204340316", "_blank")}
             className="hover:text-green-600 transition text-3xl"
             >
             <FaWhatsapp />
