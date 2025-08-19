@@ -149,7 +149,7 @@ export default function Work() {
       >
         Projects
       </motion.h2>
-<p className="mt-6 text-center text-gray-700">
+<p className="font-bold text-center mb-12 relative z-10 bg-gradient-to-r from-indigo-600 to-purple-500 bg-clip-text text-transparent">
     Explore the rest of my projects on{' '}
     <a 
       href="https://github.com/Alfiya-Simran" 
@@ -178,6 +178,7 @@ export default function Work() {
     </section>
   );
 }
+
 
 
 
