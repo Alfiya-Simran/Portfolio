@@ -70,17 +70,19 @@ export default function Contact() {
 
           {/* Email */}
          <button
-           onClick={() => window.location.href = "mailto:yourmail@example.com"}
+           onClick={() =>
+             window.open(
+               "https://mail.google.com/mail/?view=cm&fs=1&to=yourmail@example.com",
+               "_blank"
+             )
+           }
            className="hover:text-red-500 transition text-3xl"
            >
            <FaEnvelope />
          </button>
-
-
-
           {/* Phone */}
           <a
-            href="+917204340316"
+            href="tel:+917204340316"
             className="hover:text-green-500 transition"
           >
             <FaPhone />
