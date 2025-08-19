@@ -76,6 +76,7 @@ const projects = [
       "/images/Investnest/in6.png",
       "/images/Investnest/in7.png",
       "/images/Investnest/in8.png",
+      ]
   },
   {
     title: "Mini voice assisstant for PC",
@@ -179,6 +180,7 @@ export default function Work() {
     </section>
   );
 }
+
 
 
 
