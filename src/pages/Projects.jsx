@@ -33,10 +33,10 @@ const projects = [
     techList: ["Python", "TensorFlow/Keras", "OpenCV", "Streamlit", "NumPy", "Matplotlib"],
     repo: "https://github.com/Alfiya-Simran/Brain-Tumor",
     images: [
-      "/images/brain1.png",
-      "/images/brain2.png",
-      "/images/brain3.png",
-      "/images/brain4.png"
+      "/images/bt1.png",
+      "/images/btn2.png",
+      "/images/bt3.png",
+      "/images/bt4.png"
     ]
   },
 ];
