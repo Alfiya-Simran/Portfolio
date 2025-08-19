@@ -18,7 +18,15 @@ const projects = [
     desc: "Startup funding platform with investor/startup roles.",
     techList: ["React", "Firebase", "Tailwind CSS"],
     repo: "https://github.com/Alfiya-Simran/Mini-PC-voice-assistant",
-    image: "/images/invest.png"
+    images: [
+      "/images/Investnest/in1.png",
+      "/images/Investnest/in2.png",
+      "/images/Investnest/in3.png",
+      "/images/Investnest/in4.png",
+      "/images/Investnest/in5.png",
+      "/images/Investnest/in6.png",
+      "/images/Investnest/in7.png",
+      "/images/Investnest/in8.png",
   },
   {
     title: "Mini voice assisstant for PC",
