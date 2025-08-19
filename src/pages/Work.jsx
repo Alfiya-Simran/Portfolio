@@ -149,7 +149,19 @@ export default function Work() {
       >
         Projects
       </motion.h2>
-
+<p className="mt-6 text-center text-gray-700">
+    Explore the rest of my projects on{' '}
+    <a 
+      href="https://github.com/Alfiya-Simran" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="text-blue-500 hover:underline"
+    >
+      GitHub
+    </a>
+    .
+  </p>
+  
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 relative z-10">
         {projects.map((proj, index) => (
           <motion.div
@@ -166,5 +178,6 @@ export default function Work() {
     </section>
   );
 }
+
 
 
