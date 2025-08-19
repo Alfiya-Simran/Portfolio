@@ -32,7 +32,7 @@ const projects = [
     desc: "A deep learning-based Brain Tumor Classification system with a Streamlit interface for real-time MRI image analysis",
     techList: ["Python", "TensorFlow/Keras", "OpenCV", "Streamlit", "NumPy", "Matplotlib"],
     repo: "https://github.com/Alfiya-Simran/Brain-Tumor",
-    video: "/videos/braintumor.mp4"
+    video: "/images/brain.png"
   },
 ];
 
