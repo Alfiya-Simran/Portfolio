@@ -13,19 +13,18 @@ export default function ProjectCard({ title, desc, techList, repo, link, image, 
         />
       )}
 
-      {/* Image Grid (2x2) */}
-      {images && (
-        <div className="grid grid-cols-2 gap-2 w-50px">
-          {images.map((img, idx) => (
-            <img
-              key={idx}
-              src={img}
-              alt={`${title} - ${idx + 1}`}
-              className="rounded-lg shadow-md object-cover transform hover:scale-105 transition duration-300"
-            />
-          ))}
-        </div>
-      )}
+     {images && (
+      <div className="grid grid-cols-2 gap-3">
+        {images.map((img, idx) => (
+        <img
+          key={idx}
+          src={img}
+          alt={`${title} - ${idx + 1}`}
+          className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-lg shadow-md mx-auto transform hover:scale-105 transition duration-300"
+          />
+      ))}
+      </div>
+    )}
 
       {/* Video */}
       {video && (
@@ -76,4 +75,5 @@ export default function ProjectCard({ title, desc, techList, repo, link, image, 
     </div>
   );
 }
+
 
