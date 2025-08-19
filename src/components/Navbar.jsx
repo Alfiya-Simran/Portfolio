@@ -15,7 +15,7 @@ export default function Navbar() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Certificates", path: "/certificates" },
-    { name: "Work", path: "/work" },
+    { name: "Projects & Experience", path: "/work" },
     { name: "Contact", path: "/contact" },
     
   ];
@@ -108,3 +108,4 @@ export default function Navbar() {
     </nav>
   );
 }
+
