@@ -50,19 +50,19 @@ const internships = [
 ];
 
 const projects = [
+  {
+    title: "Brain Tumor detection & classification model",
+    desc: "A deep learning-based Brain Tumor Classification system with a Streamlit interface for real-time MRI image analysis",
+    techList: ["Python", "TensorFlow/Keras", "OpenCV", "Streamlit", "NumPy", "Matplotlib"],
+    repo: "https://github.com/Alfiya-Simran/Brain-Tumor",
+    video: "/videos/braintumor.mp4"
+  },
 {
     title: "InvestNest",
     desc: "Startup funding platform with investor/startup roles.",
     techList: ["React", "Firebase", "Tailwind CSS"],
     repo: "https://github.com/Alfiya-Simran/Mini-PC-voice-assistant",
     image: "/images/invest.png",
-  },
-  {
-    title: "Credit Card Fraud Detection",
-    desc: "Streamlit-based ML app that detects fraudulent credit card transactions using Random Forest and Scikit-learn.",
-    techList: ["Python", "Streamlit", "Scikit-learn", "Pandas"],
-    repo: "https://github.com/Alfiya-Simran/Credit-card-fraud-detection-model",
-    image: "/images/fraud.png",
   },
   {
     title: "Mini voice assisstant for PC",
@@ -72,11 +72,11 @@ const projects = [
     image: "/images/ana.png",
   },
   {
-    title: "Brain Tumor detection & classification model",
-    desc: "A deep learning-based Brain Tumor Classification system with a Streamlit interface for real-time MRI image analysis",
-    techList: ["Python", "TensorFlow/Keras", "OpenCV", "Streamlit", "NumPy", "Matplotlib"],
-    repo: "https://github.com/Alfiya-Simran/Brain-Tumor",
-    video: "/videos/braintumor.mp4"
+    title: "Credit Card Fraud Detection",
+    desc: "Streamlit-based ML app that detects fraudulent credit card transactions using Random Forest and Scikit-learn.",
+    techList: ["Python", "Streamlit", "Scikit-learn", "Pandas"],
+    repo: "https://github.com/Alfiya-Simran/Credit-card-fraud-detection-model",
+    image: "/images/fraud.png",
   },
 ];
 
@@ -166,5 +166,6 @@ export default function Work() {
     </section>
   );
 }
+
 
 
