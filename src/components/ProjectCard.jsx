@@ -1,11 +1,11 @@
 import { FaGithub } from "react-icons/fa";
 
-export default function ProjectCard({ title, desc, techList, repo, link, image, images, video }) {
+export default function ProjectCard({ title, desc, techList, repo, link, image, video }) {
   return (
     <div className="mx-auto max-w-3xl bg-white/30 dark:bg-black/30 backdrop-blur-md p-6 rounded-xl shadow-lg text-gray-800 dark:text-gray-100 space-y-6">
       
-      {/* Single Image */}
-      {image && !images && (
+      {/* Image or Video */}
+      {image && (
         <img
           src={image}
           alt={title}
@@ -13,20 +13,6 @@ export default function ProjectCard({ title, desc, techList, repo, link, image, 
         />
       )}
 
-     {images && (
-      <div className="grid grid-cols-2 gap-3">
-        {images.map((img, idx) => (
-        <img
-          key={idx}
-          src={img}
-          alt={`${title} - ${idx + 1}`}
-          className="w-full h-32 md:w-40 md:h-40 object-cover rounded-lg shadow-md mx-auto transform hover:scale-105 transition duration-300"
-          />
-      ))}
-      </div>
-    )}
-
-      {/* Video */}
       {video && (
         <video
           src={video}
@@ -75,6 +61,3 @@ export default function ProjectCard({ title, desc, techList, repo, link, image, 
     </div>
   );
 }
-
-
-
